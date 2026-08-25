@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/favicon.jpg',
-    shortcut: '/favicon.jpg',
-    apple: '/favicon.jpg',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/apple-icon.png',
   },
   robots: {
     index: true,
@@ -40,8 +40,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/favicon.jpg" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
