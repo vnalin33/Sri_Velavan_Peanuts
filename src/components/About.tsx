@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function About() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -10,13 +11,13 @@ export default function About() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.reveal-up').forEach((el, i) => {
+            entry.target.querySelectorAll('.reveal-up, .reveal-left, .reveal-right').forEach((el, i) => {
               setTimeout(() => el.classList.add('revealed'), i * 120);
             });
           }
         });
       },
-      { threshold: 0.15 }
+      { threshold: 0.12 }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
@@ -29,30 +30,44 @@ export default function About() {
   ];
 
   return (
-    <section id="about" ref={sectionRef} className="py-16 md:py-24 bg-gb relative">
+    <section id="about" ref={sectionRef} className="py-20 md:py-28 bg-gb relative">
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-dg/5" />
       <div className="max-w-[1100px] mx-auto px-6 md:px-10">
-        <div className="text-center mb-12">
-          <span className="reveal-up inline-block text-xs font-medium tracking-[0.3em] uppercase text-dg/50 mb-6">Our Foundation</span>
-          <h2 className="reveal-up font-serif text-3xl md:text-4xl lg:text-5xl text-dg leading-[1.1] mb-8">
+        <div className="text-center mb-14">
+          <span className="reveal-up inline-block text-[0.65rem] font-semibold tracking-[0.35em] uppercase text-dg/35 mb-6">Our Foundation</span>
+          <h2 className="reveal-up font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-dg leading-[1.08] mb-8 tracking-[-0.01em]">
             Rooted in Nature.<br /><span className="italic">Built on Trust.</span>
           </h2>
-          <p className="reveal-up text-lg md:text-xl text-dg/50 font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="reveal-up text-lg md:text-xl text-dg/45 font-light leading-relaxed max-w-2xl mx-auto">
             Sri Velavan brings together traditional agricultural values with modern quality standards.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 md:gap-16">
+        <div className="grid md:grid-cols-3 gap-10 md:gap-14 mb-14">
           {features.map((f, i) => (
-            <div key={i} className="reveal-up text-center md:text-left">
-              <div className="w-12 h-12 rounded-full bg-dg/10 flex items-center justify-center mb-6 mx-auto md:mx-0">
-                <svg className="w-5 h-5 text-dg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <div key={i} className={`reveal-up text-center md:text-left group`}>
+              <div className="icon-float w-14 h-14 rounded-2xl bg-dg/[0.06] border border-dg/8 flex items-center justify-center mb-6 mx-auto md:mx-0 group-hover:bg-dg/10 group-hover:border-dg/15 transition-all duration-500">
+                <svg className="w-5.5 h-5.5 text-dg/60 group-hover:text-dg transition-colors duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d={f.icon} />
                 </svg>
               </div>
               <h3 className="font-serif text-xl text-dg mb-3">{f.title}</h3>
-              <p className="text-dg/45 text-[0.95rem] leading-relaxed font-light">{f.desc}</p>
+              <p className="text-dg/40 text-[0.92rem] leading-[1.65] font-light">{f.desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* Link to full About page */}
+        <div className="reveal-up text-center">
+          <Link
+            href="/about/"
+            className="inline-flex items-center gap-2.5 text-sm font-medium text-dg/60 hover:text-dg px-5 py-2.5 rounded-full border border-dg/15 hover:border-dg/30 hover:bg-dg/[0.03] transition-all duration-400 group"
+          >
+            <span>Meet Our Founder</span>
+            <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </Link>
         </div>
       </div>
     </section>

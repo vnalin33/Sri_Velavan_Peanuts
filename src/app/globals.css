@@ -264,6 +264,21 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Smooth page transitions */
+@keyframes pageEnter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+main {
+  animation: pageEnter 0.4s ease-out;
+}
+
+/* Custom transition durations */
+.transition-all {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal-up, .reveal-fade, .reveal-left, .reveal-right, .reveal-scale {
     opacity: 1 !important;
@@ -273,4 +288,6 @@
   .timeline-line { transform: scaleX(1) !important; transition: none !important; }
   .badge-shimmer::after { animation: none !important; }
   .scroll-progress-bar { display: none; }
+  main { animation: none; }
 }
+
