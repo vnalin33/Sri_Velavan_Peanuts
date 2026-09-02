@@ -108,7 +108,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 bg-gb/98 backdrop-blur-2xl z-[99]">
+        <div className="lg:hidden fixed inset-0 bg-gb z-[99]">
           <div className="flex flex-col items-center justify-center h-full gap-8">
             {navItems.map((item) => (
               <Link 
@@ -118,7 +118,7 @@ export default function Navbar() {
                 className={`text-2xl font-serif font-medium ${
                   (item.href === '/about/' && pathname === '/about') 
                     ? 'text-dg' 
-                    : 'text-dg/70'
+                    : 'text-dg/90 hover:text-dg'
                 }`}
               >
                 {item.label}

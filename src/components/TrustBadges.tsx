@@ -47,11 +47,11 @@ export default function TrustBadges() {
 
   return (
     <div className="bg-gb-light border-y border-dg/10 py-6 md:py-7 overflow-hidden">
-      <div className="max-w-[1300px] mx-auto px-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+      <div className="max-w-[1300px] mx-auto px-6 grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-x-10 gap-y-4">
         {badges.map((badge, i) => (
           <div
             key={i}
-            className="badge-shimmer flex items-center gap-2.5 text-dg px-3 py-1.5 rounded-full hover:bg-dg/5 transition-all duration-400 cursor-default"
+            className="badge-shimmer flex items-center gap-2.5 text-dg px-3 py-1.5 rounded-full hover:bg-dg/5 transition-all duration-400 cursor-default last:col-span-2 last:justify-self-center"
             style={{ animation: `fadeSlideUp 0.6s ease-out ${i * 0.12}s both` }}
           >
             <span className="text-dg/60 transition-transform duration-300 hover:scale-110">{badge.icon}</span>
