@@ -2,48 +2,35 @@
 
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 const machinery = [
   {
-    title: 'Automated Shelling Unit',
-    desc: 'Our high-capacity shelling machines process up to 5 tonnes of raw peanuts per hour with minimal breakage, ensuring maximum kernel integrity and yield.',
+    title: 'Decorticator — Shelling Machine',
+    desc: 'Our motorized decorticator efficiently removes peanut shells while keeping kernels intact. Sourced directly from local farms, raw groundnuts are fed into the machine — separating clean kernels from shells in a single pass.',
     image: '/images/infrastructure/shelling.jpg',
-    specs: ['5 TPH Capacity', '< 2% Breakage Rate', 'Auto-Feed System'],
+    specs: ['Motor-Driven', 'Low Breakage', 'Single-Pass Shell Removal'],
   },
   {
-    title: 'Electronic Color Sorter',
-    desc: 'AI-powered optical sorting technology inspects every single peanut at high speed, rejecting discolored, damaged, or foreign particles with pinpoint accuracy.',
+    title: 'Manual Grading & Sorting',
+    desc: 'Experienced workers hand-sort and grade every batch of peanuts on sieve trays — removing damaged, discolored, or undersized kernels. This careful human touch ensures only the best quality reaches our customers.',
     image: '/images/infrastructure/grading.jpg',
-    specs: ['99.9% Accuracy', 'HD Camera Array', 'Real-Time Reject'],
+    specs: ['Hand-Sorted', 'Size Grading', 'Quality Inspection'],
   },
   {
-    title: 'Automated Packaging Line',
-    desc: 'Precision weighing and vacuum-sealed packaging systems ensure every bag meets exact weight specifications while preserving freshness for longer shelf life.',
+    title: 'Weighing & Packaging',
+    desc: 'Graded peanuts are carefully weighed on platform scales and packed into clean jute bags for dispatch. Each bag is weighed accurately and stitched securely — ready for transport to oil mills, traders, and distributors across Tamil Nadu.',
     image: '/images/infrastructure/packaging.jpg',
-    specs: ['Vacuum Sealed', 'Auto-Weighing', 'Food-Grade Materials'],
-  },
-  {
-    title: 'Quality Testing Lab',
-    desc: 'Our in-house laboratory conducts rigorous testing for moisture content, aflatoxin levels, and physical grading — ensuring every batch meets international standards.',
-    image: '/images/infrastructure/quality-lab.jpg',
-    specs: ['Moisture Analysis', 'Aflatoxin Testing', 'FSSAI Compliant'],
-  },
-  {
-    title: 'Temperature-Controlled Storage',
-    desc: 'Climate-controlled warehousing maintains optimal conditions to preserve peanut quality from processing to dispatch, preventing moisture damage and spoilage.',
-    image: '/images/infrastructure/cold-storage.jpg',
-    specs: ['2°C – 8°C Range', '500 MT Capacity', '24/7 Monitoring'],
+    specs: ['Accurate Weighing', 'Jute Bag Packing', 'Dispatch Ready'],
   },
 ];
 
 const stats = [
-  { value: '5+', label: 'Processing Lines' },
-  { value: '10 TPH', label: 'Total Capacity' },
-  { value: '500 MT', label: 'Storage Capacity' },
-  { value: '99.9%', label: 'Sorting Accuracy' },
+  { value: '1', label: 'Processing Line' },
+  { value: '2 TPH', label: 'Shelling Capacity' },
+  { value: '100%', label: 'Hand-Graded' },
+  { value: 'Direct', label: 'Farm Sourcing' },
 ];
 
 export default function InfrastructurePage() {
@@ -74,23 +61,23 @@ export default function InfrastructurePage() {
       <section className="relative h-[70vh] md:h-[80vh] flex items-end overflow-hidden">
         <Image
           src="/images/infrastructure/hero.jpg"
-          alt="Sree Velavan Processing Facility"
+          alt="Sree Velavan Processing Unit, Dharapuram"
           fill
           className="object-cover"
           priority
           sizes="100vw"
           quality={90}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dg via-dg/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dg via-dg/60 to-dg/10" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 md:px-10 pb-16 md:pb-20 w-full">
           <span className="inline-block text-[0.6rem] font-semibold tracking-[0.35em] uppercase text-gb/50 mb-4">
-            Our Infrastructure
+            Our Processing Unit
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gb leading-[1.05] mb-4 max-w-2xl">
-            Powered by <span className="italic">Precision.</span>
+            Rooted in <span className="italic">Tradition.</span>
           </h1>
           <p className="text-gb/60 text-lg md:text-xl font-light max-w-xl leading-relaxed">
-            State-of-the-art machinery and rigorous quality systems — ensuring every peanut meets the highest standard.
+            A village-born processing unit in Dharapuram — where every peanut is shelled, hand-graded, and packed with care.
           </p>
         </div>
       </section>
@@ -115,13 +102,13 @@ export default function InfrastructurePage() {
             ref={(el) => { if (el) revealRefs.current[0] = el; }}
           >
             <span className="reveal-up inline-block text-[0.6rem] font-semibold tracking-[0.35em] uppercase text-dg/35 mb-4">
-              World-Class Equipment
+              How We Process
             </span>
             <h2 className="reveal-up font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-dg leading-[1.08] mb-6">
-              Our <span className="italic">Machinery.</span>
+              Simple. Honest. <span className="italic">Effective.</span>
             </h2>
             <p className="reveal-up text-dg/45 text-lg font-light max-w-2xl mx-auto leading-relaxed">
-              Every stage of our processing is handled by industry-leading equipment — from shelling and sorting to packaging and storage.
+              We believe in keeping things straightforward — good machinery, skilled hands, and honest work. No shortcuts, no compromises.
             </p>
           </div>
 
@@ -150,7 +137,7 @@ export default function InfrastructurePage() {
                 {/* Content */}
                 <div className="w-full md:w-[45%]">
                   <span className="reveal-up inline-block text-[0.58rem] font-semibold tracking-[0.3em] uppercase text-dg/30 mb-3">
-                    Stage {String(i + 1).padStart(2, '0')}
+                    Step {String(i + 1).padStart(2, '0')}
                   </span>
                   <h3 className="reveal-up font-serif text-2xl md:text-3xl text-dg mb-4 leading-tight">
                     {machine.title}
@@ -181,25 +168,24 @@ export default function InfrastructurePage() {
       {/* Process Flow */}
       <section className="bg-gb-light py-20 md:py-24 border-y border-dg/8">
         <div
-          className="max-w-[1000px] mx-auto px-6 md:px-10 text-center"
-          ref={(el) => { if (el) revealRefs.current[7] = el; }}
+          className="max-w-[900px] mx-auto px-6 md:px-10 text-center"
+          ref={(el) => { if (el) revealRefs.current[5] = el; }}
         >
           <span className="reveal-up inline-block text-[0.6rem] font-semibold tracking-[0.35em] uppercase text-dg/35 mb-4">
-            End-to-End Processing
+            Our Process
           </span>
           <h2 className="reveal-up font-serif text-3xl md:text-4xl text-dg leading-tight mb-14">
-            From Raw to <span className="italic">Ready.</span>
+            Farm to <span className="italic">Dispatch.</span>
           </h2>
 
-          <div className="reveal-up grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-4">
+          <div className="reveal-up grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
             {[
-              { step: '01', title: 'Raw Intake', icon: 'M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15' },
+              { step: '01', title: 'Farm Sourcing', icon: 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z' },
               { step: '02', title: 'Shelling', icon: 'M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 010 1.954l-7.108 4.061A1.125 1.125 0 013 16.811z' },
-              { step: '03', title: 'Grading', icon: 'M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25' },
-              { step: '04', title: 'Quality Check', icon: 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z' },
-              { step: '05', title: 'Packaging', icon: 'M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z' },
+              { step: '03', title: 'Hand Grading', icon: 'M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075-5.925v-1.5a1.575 1.575 0 013.15 0v1.5m0 0v3.375c0 .621.504 1.125 1.125 1.125h.75' },
+              { step: '04', title: 'Packing', icon: 'M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z' },
             ].map((item, i) => (
-              <div key={i} className="flex flex-col items-center last:col-span-2 last:md:col-span-1 last:justify-self-center">
+              <div key={i} className="flex flex-col items-center">
                 <div className="w-14 h-14 rounded-2xl bg-dg/[0.06] border border-dg/10 flex items-center justify-center mb-3">
                   <svg className="w-6 h-6 text-dg/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
@@ -213,17 +199,52 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
+      {/* Why Us */}
+      <section className="bg-gb py-20 md:py-24">
+        <div
+          className="max-w-[1000px] mx-auto px-6 md:px-10"
+          ref={(el) => { if (el) revealRefs.current[6] = el; }}
+        >
+          <div className="text-center mb-14">
+            <span className="reveal-up inline-block text-[0.6rem] font-semibold tracking-[0.35em] uppercase text-dg/35 mb-4">
+              Why Sree Velavan
+            </span>
+            <h2 className="reveal-up font-serif text-3xl md:text-4xl text-dg leading-tight">
+              Built on <span className="italic">Trust.</span>
+            </h2>
+          </div>
+
+          <div className="reveal-up grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { title: 'Direct Farm Sourcing', desc: 'We buy raw groundnuts directly from farmers around Dharapuram — no middlemen, no markups. Fair prices for farmers, quality raw material for us.', icon: 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z' },
+              { title: 'Honest Quality', desc: 'Every batch is hand-inspected. No mixing, no blending, no artificial grading. What you see is what you get — clean, uniform, naturally processed peanuts.', icon: 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z' },
+              { title: 'Reliable Supply', desc: 'Located in the heart of peanut country, we ensure consistent supply year-round. Our relationships with local farmers mean we never run short on raw material.', icon: 'M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-.308A8.177 8.177 0 0016.5 6.562M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z' },
+            ].map((item, i) => (
+              <div key={i} className="bg-gb-light rounded-2xl p-7 border border-dg/6">
+                <div className="w-11 h-11 rounded-xl bg-dg/[0.06] border border-dg/10 flex items-center justify-center mb-5">
+                  <svg className="w-5 h-5 text-dg/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d={item.icon} />
+                  </svg>
+                </div>
+                <h3 className="font-serif text-lg text-dg mb-2">{item.title}</h3>
+                <p className="text-dg/40 text-sm font-light leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-dg py-20 md:py-24">
         <div
           className="max-w-[800px] mx-auto px-6 md:px-10 text-center"
-          ref={(el) => { if (el) revealRefs.current[8] = el; }}
+          ref={(el) => { if (el) revealRefs.current[7] = el; }}
         >
           <h2 className="reveal-up font-serif text-3xl md:text-4xl text-gb leading-tight mb-6">
-            Want a <span className="italic">Facility Tour?</span>
+            Visit Our <span className="italic">Unit.</span>
           </h2>
           <p className="reveal-up text-gb/50 text-lg font-light max-w-xl mx-auto mb-10 leading-relaxed">
-            We welcome business partners to visit our processing unit in Dharapuram. See our machinery in action and experience our commitment to quality firsthand.
+            We welcome business partners to visit our processing unit in Dharapuram. See how we work, meet our team, and experience our commitment to quality firsthand.
           </p>
           <div className="reveal-up flex flex-wrap items-center justify-center gap-4">
             <a href="tel:+917904538909" className="inline-flex items-center gap-2.5 bg-gb text-dg font-medium text-sm px-7 py-3.5 rounded-full hover:bg-gb-dark transition-colors duration-300">
@@ -233,7 +254,7 @@ export default function InfrastructurePage() {
               Schedule a Visit
             </a>
             <a
-              href="https://wa.me/917904538909?text=Hello%20Sree%20Velavan%2C%20I%20would%20like%20to%20schedule%20a%20facility%20tour."
+              href="https://wa.me/917904538909?text=Hello%20Sree%20Velavan%2C%20I%20would%20like%20to%20visit%20your%20processing%20unit."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 bg-transparent border border-gb/30 text-gb font-medium text-sm px-7 py-3.5 rounded-full hover:bg-gb/10 transition-colors duration-300"
