@@ -36,6 +36,7 @@ export default function Navbar() {
     { label: 'Home', href: isHome ? '#' : '/' },
     { label: 'Our Story', href: isHome ? '#story' : '/#story' },
     { label: 'About', href: '/about/' },
+    { label: 'Infrastructure', href: '/infrastructure/' },
     { label: 'Product', href: isHome ? '#products' : '/#products' },
     { label: 'Quality', href: isHome ? '#quality' : '/#quality' },
     { label: 'Contact', href: isHome ? '#contact' : '/#contact' },
@@ -81,7 +82,7 @@ export default function Navbar() {
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
                 className={`nav-link-underline text-[0.88rem] font-medium tracking-wide transition-colors duration-300 ${
-                  (item.href === '/about/' && pathname === '/about') 
+                  (item.href.startsWith('/') && !item.href.startsWith('/#') && pathname === item.href.replace(/\/$/, '')) 
                     ? 'text-dg' 
                     : 'text-dg/80 hover:text-dg'
                 }`}
@@ -116,7 +117,7 @@ export default function Navbar() {
                 href={item.href} 
                 onClick={(e) => handleNavClick(e, item.href)} 
                 className={`text-2xl font-serif font-medium ${
-                  (item.href === '/about/' && pathname === '/about') 
+                  (item.href.startsWith('/') && !item.href.startsWith('/#') && pathname === item.href.replace(/\/$/, '')) 
                     ? 'text-dg' 
                     : 'text-dg/90 hover:text-dg'
                 }`}
