@@ -83,7 +83,7 @@ export default function LoadingScreen() {
       <p className={`font-serif text-xl text-dg/80 italic tracking-wide transition-all duration-500 ${
         phase === 'cracking' ? 'opacity-100 translate-y-0' : 'opacity-60 translate-y-1'
       }`}>
-        Sri Velavan
+        Sree Velavan
       </p>
       <p className={`text-[0.6rem] text-dg/30 tracking-[0.35em] uppercase font-medium mt-2 transition-all duration-500 ${
         phase === 'cracking' ? 'opacity-100' : 'opacity-40'

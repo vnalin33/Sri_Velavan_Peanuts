@@ -39,7 +39,7 @@ export default function About() {
             Rooted in Nature.<br /><span className="italic">Built on Trust.</span>
           </h2>
           <p className="reveal-up text-lg md:text-xl text-dg/45 font-light leading-relaxed max-w-2xl mx-auto">
-            Sri Velavan brings together traditional agricultural values with modern quality standards.
+            Sree Velavan brings together traditional agricultural values with modern quality standards.
           </p>
         </div>
 

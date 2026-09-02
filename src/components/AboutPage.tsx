@@ -35,7 +35,7 @@ export default function AboutPage() {
     {
       year: 'Early 2025',
       title: 'The Seed Was Planted',
-      desc: 'Mohanraj.P founded Sri Velavan with a clear mission — to bring premium, naturally processed peanuts directly from the farms of Dharapuram to businesses across India.',
+      desc: 'Mohanraj.P founded Sree Velavan with a clear mission — to bring premium, naturally processed peanuts directly from the farms of Dharapuram to businesses across India.',
       icon: 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
     },
     {
@@ -53,7 +53,7 @@ export default function AboutPage() {
     {
       year: 'Today',
       title: 'A Trusted Name',
-      desc: 'Sri Velavan has become a dependable partner for businesses seeking premium peanuts — rooted in tradition, driven by quality.',
+      desc: 'Sree Velavan has become a dependable partner for businesses seeking premium peanuts — rooted in tradition, driven by quality.',
       icon: 'M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z',
     },
   ];
@@ -96,7 +96,7 @@ export default function AboutPage() {
           <Link href="/" className="flex items-center shrink-0 group">
             <Image
               src="/images/logo.png"
-              alt="Sri Velavan"
+              alt="Sree Velavan"
               width={320}
               height={100}
               className="h-[60px] w-auto transition-transform duration-500 group-hover:scale-[1.02]"
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 <div className="relative rounded-[24px] overflow-hidden shadow-[0_40px_100px_rgba(26,51,36,0.18)]">
                   <Image
                     src="/images/founder.jpg"
-                    alt="Mohanraj.P — Founder of Sri Velavan"
+                    alt="Mohanraj.P — Founder of Sree Velavan"
                     width={440}
                     height={550}
                     className="object-cover w-full aspect-[3/4]"
@@ -161,18 +161,18 @@ export default function AboutPage() {
                 Mohanraj<span className="text-dg/30">.</span>P
               </h1>
               <p className="reveal-up text-dg/35 text-[0.72rem] font-semibold tracking-[0.2em] uppercase mb-8">
-                Founder & Managing Director — Sri Velavan
+                Founder & Managing Director — Sree Velavan
               </p>
               <div className="reveal-up w-20 h-[1px] bg-gradient-to-r from-dg/25 to-transparent mb-8" />
               <p className="reveal-up text-[1.1rem] md:text-xl text-dg/55 font-light leading-[1.7] mb-5">
                 With a deep-rooted passion for agriculture and an unwavering commitment to quality, 
-                <strong className="text-dg font-medium"> Mohanraj.P</strong> founded Sri Velavan in early 2025 
+                <strong className="text-dg font-medium"> Mohanraj.P</strong> founded Sree Velavan in early 2025 
                 from the heart of <strong className="text-dg font-medium">Dharapuram, Tamil Nadu</strong>.
               </p>
               <p className="reveal-up text-[0.95rem] text-dg/45 font-light leading-[1.75] mb-10">
                 His vision was simple yet powerful — to bridge the gap between the rich peanut farms of 
                 Dharapuram and businesses that demand consistently high-quality produce. In just 1.5 years, 
-                he has built Sri Velavan into a trusted name in the peanut processing industry, 
+                he has built Sree Velavan into a trusted name in the peanut processing industry, 
                 earning the confidence of clients through reliability, transparency, and an uncompromising 
                 focus on natural quality.
               </p>
@@ -236,14 +236,14 @@ export default function AboutPage() {
               </svg>
             </div>
             <blockquote className="font-serif text-2xl md:text-[1.75rem] lg:text-3xl text-dg leading-[1.5] italic mb-10">
-              &ldquo;Quality is not an act, it is a habit. At Sri Velavan, we ensure that every peanut 
+              &ldquo;Quality is not an act, it is a habit. At Sree Velavan, we ensure that every peanut 
               that leaves our facility carries the trust our farmers and clients have placed in us.&rdquo;
             </blockquote>
             <div className="flex items-center justify-center gap-4">
               <div className="w-12 h-[1px] bg-dg/15" />
               <div>
                 <p className="text-dg/70 text-sm font-semibold tracking-[0.08em]">Mohanraj.P</p>
-                <p className="text-dg/30 text-[0.65rem] font-medium tracking-[0.15em] uppercase mt-0.5">Founder, Sri Velavan</p>
+                <p className="text-dg/30 text-[0.65rem] font-medium tracking-[0.15em] uppercase mt-0.5">Founder, Sree Velavan</p>
               </div>
               <div className="w-12 h-[1px] bg-dg/15" />
             </div>
@@ -401,7 +401,7 @@ export default function AboutPage() {
       <footer className="bg-dg text-gb/50 py-8 relative">
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-gb/5" />
         <div className="max-w-[1200px] mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-[0.68rem] text-gb/20 font-light">&copy; {new Date().getFullYear()} Sri Velavan Chekku Aalai. All rights reserved.</p>
+          <p className="text-[0.68rem] text-gb/20 font-light">&copy; {new Date().getFullYear()} Sree Velavan Chekku Aalai. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/" className="text-[0.68rem] text-gb/25 hover:text-gb/50 transition-colors font-light">
               Home

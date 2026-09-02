@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Image src="/images/logo.png" alt="Sri Velavan" width={320} height={110} className="h-[85px] w-auto brightness-0 invert opacity-50 mb-5" />
+            <Image src="/images/logo.png" alt="Sree Velavan" width={320} height={110} className="h-[85px] w-auto brightness-0 invert opacity-50 mb-5" />
             <p className="text-[0.78rem] text-gb/25 font-light leading-relaxed max-w-[220px]">
               Peanut processing & wholesale supply since Dharapuram. Quality you can trust.
             </p>
@@ -81,7 +81,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-gb/6 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-[0.65rem] text-gb/18 font-light">&copy; {new Date().getFullYear()} Sri Velavan Chekku Aalai. All rights reserved.</p>
+          <p className="text-[0.65rem] text-gb/18 font-light">&copy; {new Date().getFullYear()} Sree Velavan Chekku Aalai. All rights reserved.</p>
           <p className="text-[0.65rem] text-gb/15 font-light tracking-wider">Pure · Natural · Traditional</p>
         </div>
       </div>

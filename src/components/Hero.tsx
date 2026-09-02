@@ -20,7 +20,7 @@ export default function Hero() {
               style={{ animation: 'fadeSlideUp 0.8s ease-out 0.2s both' }}
             >
               <span className="w-2 h-2 rounded-full bg-dg animate-pulse" />
-              <span className="text-[0.62rem] font-semibold text-dg tracking-[0.3em] uppercase">Sri Velavan · Chekku Aalai · Dharapuram</span>
+              <span className="text-[0.62rem] font-semibold text-dg tracking-[0.3em] uppercase">Sree Velavan · Chekku Aalai · Dharapuram</span>
             </div>
 
             {/* Headline */}

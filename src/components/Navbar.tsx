@@ -66,7 +66,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center shrink-0 overflow-visible">
             <Image
               src="/images/logo.png"
-              alt="Sri Velavan"
+              alt="Sree Velavan"
               width={380}
               height={120}
               className={`transition-all duration-500 ${scrolled ? 'h-[78px]' : 'h-[100px]'} w-auto`}

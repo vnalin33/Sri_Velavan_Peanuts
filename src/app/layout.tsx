@@ -3,19 +3,19 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://srivelavanpeanuts.com'),
-  title: 'Sri Velavan — Premium Peanuts, Naturally Better',
+  title: 'Sree Velavan — Premium Peanuts, Naturally Better',
   description: 'Premium peanuts sourced with care, handled with precision, and delivered with consistency. From the farm to your business.',
   openGraph: {
-    title: 'Sri Velavan — From the Farm. Naturally Better.',
+    title: 'Sree Velavan — From the Farm. Naturally Better.',
     description: 'Premium peanuts sourced with care, handled with precision, and delivered with consistency.',
     url: 'https://srivelavanpeanuts.com',
-    siteName: 'Sri Velavan',
+    siteName: 'Sree Velavan',
     images: [
       {
         url: '/images/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Sri Velavan Premium Peanuts',
+        alt: 'Sree Velavan Premium Peanuts',
       },
     ],
     locale: 'en_IN',
