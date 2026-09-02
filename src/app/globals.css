@@ -88,6 +88,7 @@
     max-width: 1400px;
     z-index: 100;
     border-radius: 100px;
+    overflow: visible;
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     background: rgba(237, 227, 208, 0.1);
     backdrop-filter: blur(20px);

@@ -69,7 +69,7 @@ export default function Navbar() {
               alt="Sree Velavan"
               width={380}
               height={120}
-              className={`transition-all duration-500 ${scrolled ? 'h-[78px]' : 'h-[100px]'} w-auto`}
+              className={`transition-all duration-500 ${scrolled ? 'h-[55px]' : 'h-[65px]'} w-auto object-contain`}
               priority
             />
           </Link>
