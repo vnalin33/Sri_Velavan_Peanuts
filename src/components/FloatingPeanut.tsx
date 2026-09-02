@@ -28,7 +28,7 @@ export default function FloatingPeanut() {
             <div className="flex flex-col gap-2">
               <div className="flex gap-2">
                 <a
-                  href="https://wa.me/919176646043?text=Hello%20Sri%20Velavan%2C%20I%20need%20a%20peanut%20quote."
+                  href="https://wa.me/917904538909?text=Hello%20Sri%20Velavan%2C%20I%20need%20a%20peanut%20quote."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white text-sm font-medium py-2.5 rounded-xl transition-colors duration-300"
