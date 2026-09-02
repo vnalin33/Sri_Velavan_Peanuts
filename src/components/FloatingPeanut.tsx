@@ -8,7 +8,7 @@ export default function FloatingPeanut() {
   const handleToggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="fixed bottom-6 right-[120px] z-50">
+    <div className="hidden md:block fixed bottom-6 right-[120px] z-50">
       {/* Chat popup */}
       {isOpen && (
         <div
