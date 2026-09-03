@@ -8,28 +8,28 @@ import Footer from './Footer';
 const machinery = [
   {
     title: 'Decorticator — Shelling Machine',
-    desc: 'Our motorized decorticator efficiently removes peanut shells while keeping kernels intact. Sourced directly from local farms, raw groundnuts are fed into the machine — separating clean kernels from shells in a single pass.',
+    desc: 'Our motorized decorticator with belt-driven motor efficiently removes peanut shells while keeping kernels intact. Raw groundnuts are fed from the hopper on top, and clean kernels are separated from shells through vibrating mesh screens — all in a single pass.',
     image: '/images/infrastructure/shelling.jpg',
-    specs: ['Motor-Driven', 'Low Breakage', 'Single-Pass Shell Removal'],
+    specs: ['Belt-Driven Motor', 'Multi-Screen Separation', 'Low Kernel Breakage'],
   },
   {
-    title: 'Manual Grading & Sorting',
-    desc: 'Experienced workers hand-sort and grade every batch of peanuts on sieve trays — removing damaged, discolored, or undersized kernels. This careful human touch ensures only the best quality reaches our customers.',
+    title: 'Chekku Aalai — Cold-Pressed Oil Extraction',
+    desc: 'Our traditional chekku (rotary stone press) extracts pure, cold-pressed groundnut oil the traditional way — without heat or chemicals. Connected to a bucket elevator conveyor, peanuts are automatically fed into the stone press for continuous operation.',
     image: '/images/infrastructure/grading.jpg',
-    specs: ['Hand-Sorted', 'Size Grading', 'Quality Inspection'],
+    specs: ['Stone Cold-Press', 'Bucket Elevator Feed', 'Zero Chemicals'],
   },
   {
-    title: 'Weighing & Packaging',
-    desc: 'Graded peanuts are carefully weighed on platform scales and packed into clean jute bags for dispatch. Each bag is weighed accurately and stitched securely — ready for transport to oil mills, traders, and distributors across Tamil Nadu.',
+    title: 'Color Sorter — Electronic Grading',
+    desc: 'Our electronic color sorter inspects every peanut at high speed, automatically rejecting discolored, damaged, or foreign particles. Connected via bucket elevator, this machine ensures uniform quality and clean output for every batch we process.',
     image: '/images/infrastructure/packaging.jpg',
-    specs: ['Accurate Weighing', 'Jute Bag Packing', 'Dispatch Ready'],
+    specs: ['Optical Sorting', 'Auto-Reject System', 'Uniform Output'],
   },
 ];
 
 const stats = [
   { value: '1', label: 'Processing Line' },
   { value: '2 TPH', label: 'Shelling Capacity' },
-  { value: '100%', label: 'Hand-Graded' },
+  { value: 'Chekku', label: 'Cold-Pressed Oil' },
   { value: 'Direct', label: 'Farm Sourcing' },
 ];
 
@@ -178,12 +178,13 @@ export default function InfrastructurePage() {
             Farm to <span className="italic">Dispatch.</span>
           </h2>
 
-          <div className="reveal-up grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+          <div className="reveal-up grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4">
             {[
               { step: '01', title: 'Farm Sourcing', icon: 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z' },
               { step: '02', title: 'Shelling', icon: 'M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 010 1.954l-7.108 4.061A1.125 1.125 0 013 16.811z' },
-              { step: '03', title: 'Hand Grading', icon: 'M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075-5.925v-1.5a1.575 1.575 0 013.15 0v1.5m0 0v3.375c0 .621.504 1.125 1.125 1.125h.75' },
-              { step: '04', title: 'Packing', icon: 'M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z' },
+              { step: '03', title: 'Chekku Press', icon: 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z' },
+              { step: '04', title: 'Color Sorting', icon: 'M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25' },
+              { step: '05', title: 'Dispatch', icon: 'M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-.308A8.177 8.177 0 0016.5 6.562M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z' },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="w-14 h-14 rounded-2xl bg-dg/[0.06] border border-dg/10 flex items-center justify-center mb-3">
