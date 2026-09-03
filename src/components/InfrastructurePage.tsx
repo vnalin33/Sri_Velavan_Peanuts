@@ -7,28 +7,28 @@ import Footer from './Footer';
 
 const machinery = [
   {
-    title: 'Decorticator — Shelling Machine',
-    desc: 'Our motorized decorticator with belt-driven motor efficiently removes peanut shells while keeping kernels intact. Raw groundnuts are fed from the hopper on top, and clean kernels are separated from shells through vibrating mesh screens — all in a single pass.',
+    title: 'ISI-Grade Decorticator',
+    desc: 'Our ISI-certified industrial decorticator is the backbone of our processing line. Powered by a heavy-duty belt-driven motor with a large flywheel, it shells raw groundnuts at high throughput while maintaining low kernel breakage — delivering clean, whole kernels through multi-layer vibrating screens.',
     image: '/images/infrastructure/shelling.jpg',
-    specs: ['Belt-Driven Motor', 'Multi-Screen Separation', 'Low Kernel Breakage'],
+    specs: ['ISI Certified', 'Heavy-Duty Flywheel', 'Multi-Layer Screening'],
   },
   {
-    title: 'Chekku Aalai — Cold-Pressed Oil Extraction',
-    desc: 'Our traditional chekku (rotary stone press) extracts pure, cold-pressed groundnut oil the traditional way — without heat or chemicals. Connected to a bucket elevator conveyor, peanuts are automatically fed into the stone press for continuous operation.',
+    title: 'Chekku Aalai with Bucket Elevator',
+    desc: 'Our motorized chekku aalai (rotary stone press) extracts pure, cold-pressed groundnut oil the traditional way — without heat or chemicals. An integrated bucket elevator automatically conveys peanuts from the ground-level hopper to the press, enabling continuous hands-free operation.',
     image: '/images/infrastructure/grading.jpg',
-    specs: ['Stone Cold-Press', 'Bucket Elevator Feed', 'Zero Chemicals'],
+    specs: ['Rotary Stone Press', 'Auto Bucket Elevator', 'Chemical-Free Extraction'],
   },
   {
-    title: 'Color Sorter — Electronic Grading',
-    desc: 'Our electronic color sorter inspects every peanut at high speed, automatically rejecting discolored, damaged, or foreign particles. Connected via bucket elevator, this machine ensures uniform quality and clean output for every batch we process.',
+    title: 'Electronic Color Sorter',
+    desc: 'Our electronic color sorter with optical camera technology inspects every peanut at high speed — automatically rejecting discolored, damaged, or foreign particles. Fed via a dedicated bucket elevator conveyor, it ensures uniform, export-grade quality output for every batch.',
     image: '/images/infrastructure/packaging.jpg',
-    specs: ['Optical Sorting', 'Auto-Reject System', 'Uniform Output'],
+    specs: ['Optical Camera Sorting', 'Bucket Elevator Feed', 'Export-Grade Output'],
   },
 ];
 
 const stats = [
-  { value: '1', label: 'Processing Line' },
-  { value: '2 TPH', label: 'Shelling Capacity' },
+  { value: 'Modern', label: 'Infrastructure' },
+  { value: '2 TPH', label: 'Processing Capacity' },
   { value: 'Chekku', label: 'Cold-Pressed Oil' },
   { value: 'Direct', label: 'Farm Sourcing' },
 ];
@@ -71,13 +71,13 @@ export default function InfrastructurePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-dg via-dg/60 to-dg/10" />
         <div className="relative z-10 max-w-[1200px] mx-auto px-6 md:px-10 pb-16 md:pb-20 w-full">
           <span className="inline-block text-[0.6rem] font-semibold tracking-[0.35em] uppercase text-gb/50 mb-4">
-            Our Processing Unit
+            Our Infrastructure
           </span>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gb leading-[1.05] mb-4 max-w-2xl">
-            Rooted in <span className="italic">Tradition.</span>
+            Built for <span className="italic">Quality.</span>
           </h1>
           <p className="text-gb/60 text-lg md:text-xl font-light max-w-xl leading-relaxed">
-            A village-born processing unit in Dharapuram — where every peanut is shelled, hand-graded, and packed with care.
+            Our Dharapuram facility combines reliable machinery with traditional expertise — from shelling and oil extraction to electronic sorting.
           </p>
         </div>
       </section>
@@ -102,13 +102,13 @@ export default function InfrastructurePage() {
             ref={(el) => { if (el) revealRefs.current[0] = el; }}
           >
             <span className="reveal-up inline-block text-[0.6rem] font-semibold tracking-[0.35em] uppercase text-dg/35 mb-4">
-              How We Process
+              Our Machinery
             </span>
             <h2 className="reveal-up font-serif text-3xl md:text-4xl lg:text-[2.85rem] text-dg leading-[1.08] mb-6">
-              Simple. Honest. <span className="italic">Effective.</span>
+              Equipped for <span className="italic">Excellence.</span>
             </h2>
             <p className="reveal-up text-dg/45 text-lg font-light max-w-2xl mx-auto leading-relaxed">
-              We believe in keeping things straightforward — good machinery, skilled hands, and honest work. No shortcuts, no compromises.
+              From industrial-grade shelling to cold-pressed oil extraction and electronic color sorting — our machines deliver consistent quality at every stage.
             </p>
           </div>
 

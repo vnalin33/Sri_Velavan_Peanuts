@@ -34,11 +34,10 @@ export default function Navbar() {
 
   const navItems = [
     { label: 'Home', href: isHome ? '#' : '/' },
-    { label: 'Our Story', href: isHome ? '#story' : '/#story' },
-    { label: 'About', href: '/about/' },
-    { label: 'Infrastructure', href: '/infrastructure/' },
     { label: 'Product', href: isHome ? '#products' : '/#products' },
     { label: 'Quality', href: isHome ? '#quality' : '/#quality' },
+    { label: 'Infrastructure', href: '/infrastructure/' },
+    { label: 'About Us', href: '/about/' },
     { label: 'Contact', href: isHome ? '#contact' : '/#contact' },
   ];
 
